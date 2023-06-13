@@ -17,17 +17,17 @@ public class App {
         texto = actividad1.readLine("Vuelve a introducirlo: ");
         }
         }else{
-        String textoNuevo = texto.toUpperCase().replace(" ", "_"); 
-        System.out.println(textoNuevo);
+            String textoNuevo = texto.toUpperCase().replace(" ", "_"); 
+            System.out.println(textoNuevo);
 
-        try {
-            FileWriter textoArchivo = new FileWriter("src/es/salesianos/ficheros/Actividad1.txt");
-            textoArchivo.write(textoNuevo);
-            textoArchivo.close();
-        } catch (Exception e) {
-            e.printStackTrace();
-            System.out.println("nada supongo");
-        }
+            try {
+                FileWriter textoArchivo = new FileWriter("src/es/salesianos/ficheros/Actividad1.txt");
+                textoArchivo.write(textoNuevo);
+                textoArchivo.close();
+            } catch (Exception e) {
+                e.printStackTrace();
+                System.out.println("nada supongo");
+            }
         }
 
     }
