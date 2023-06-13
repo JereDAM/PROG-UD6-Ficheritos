@@ -21,7 +21,7 @@ public class App {
             System.out.println(textoNuevo);
 
             try {
-                FileWriter textoArchivo = new FileWriter("src/es/salesianos/ficheros/Actividad1.txt");
+                FileWriter textoArchivo = new FileWriter("src/es/salesianos/ficheros/actividad1/Actividad1.txt");
                 textoArchivo.write(textoNuevo);
                 textoArchivo.close();
             } catch (Exception e) {
